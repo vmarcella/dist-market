@@ -1,4 +1,4 @@
-var HashnodeCrowdsale = artifacts.require("./HashnodeCrowdsale.sol");
+var HashnodeCrowdsale = artifacts.require("./MarketCrowdsale.sol");
 
 module.exports = function(deployer) {
   const startTime = Math.round(
