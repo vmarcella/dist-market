@@ -1,0 +1,796 @@
+{
+  "contractName": "SupportsInterface",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_interfaceID",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.6+commit.b259423e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"_interfaceID\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"details\":\"Implementation of standard for detect smart contract interfaces.\",\"methods\":{\"constructor\":{\"details\":\"Contract constructor.\"},\"supportsInterface(bytes4)\":{\"details\":\"Function to check which interfaces are suported by this contract.\",\"params\":{\"_interfaceID\":\"Id of the interface.\"},\"return\":\"True if _interfaceID is supported, false otherwise.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/cenz/dev/dapps/dist-market/contracts/utils/supports-interface.sol\":\"SupportsInterface\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/cenz/dev/dapps/dist-market/contracts/utils/erc165.sol\":{\"keccak256\":\"0x16d9fe594763fe1661894f85cbe5e959fecab1a56b415a7607d1e72ac399d479\",\"urls\":[\"bzzr://0a81c80d1ef4ae57eb036a3cc3da90d75ffbc598bc9ca6c40233cee0bd6f0395\"]},\"/home/cenz/dev/dapps/dist-market/contracts/utils/supports-interface.sol\":{\"keccak256\":\"0x31d1dbd3430a09264e505840d2c19b4fbfc80212073aeaf61bd400b630d69ec6\",\"urls\":[\"bzzr://68d8f15c5f510493f95854cd593228652a17a1f0e9b17784f95d4367f33c33dd\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b507f01ffc9a70000000000000000000000000000000000000000000000000000000060009081526020527f67be87c3ff9960ca1e9cfac5cab2ff4747269cf9ed20c9b7306235ac35a491c5805460ff1916600117905560b0806100746000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806301ffc9a714602d575b600080fd5b605160048036036020811015604157600080fd5b50356001600160e01b0319166065565b604080519115158252519081900360200190f35b6001600160e01b03191660009081526020819052604090205460ff169056fea165627a7a7230582076f96c9193442e7969dc284bd82554f12d80b05ae3d133496c8bc6d8fd1241800029",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806301ffc9a714602d575b600080fd5b605160048036036020811015604157600080fd5b50356001600160e01b0319166065565b604080519115158252519081900360200190f35b6001600160e01b03191660009081526020819052604090205460ff169056fea165627a7a7230582076f96c9193442e7969dc284bd82554f12d80b05ae3d133496c8bc6d8fd1241800029",
+  "sourceMap": "129:701:16:-;;;387:87;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;421:31:16;:19;:31;;;;;;:38;;-1:-1:-1;;421:38:16;455:4;421:38;;;129:701;;;;;;",
+  "deployedSourceMap": "129:701:16:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;129:701:16;;;;;;;;;;;;;;;;;;;677:150;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;677:150:16;-1:-1:-1;;;;;;677:150:16;;:::i;:::-;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;789:33:16;768:4;789:33;;;;;;;;;;;;;;677:150::o",
+  "source": "pragma solidity 0.5.6;\n\nimport \"./erc165.sol\";\n\n/**\n * @dev Implementation of standard for detect smart contract interfaces.\n */\ncontract SupportsInterface is\n  ERC165\n{\n\n  /**\n   * @dev Mapping of supported intefraces.\n   * @notice You must not set element 0xffffffff to true.\n   */\n  mapping(bytes4 => bool) internal supportedInterfaces;\n\n  /**\n   * @dev Contract constructor.\n   */\n  constructor()\n    public \n  {\n    supportedInterfaces[0x01ffc9a7] = true; // ERC165\n  }\n\n  /**\n   * @dev Function to check which interfaces are suported by this contract.\n   * @param _interfaceID Id of the interface.\n   * @return True if _interfaceID is supported, false otherwise.\n   */\n  function supportsInterface(\n    bytes4 _interfaceID\n  )\n    external\n    view\n    returns (bool)\n  {\n    return supportedInterfaces[_interfaceID];\n  }\n\n}\n",
+  "sourcePath": "/home/cenz/dev/dapps/dist-market/contracts/utils/supports-interface.sol",
+  "ast": {
+    "absolutePath": "/home/cenz/dev/dapps/dist-market/contracts/utils/supports-interface.sol",
+    "exportedSymbols": {
+      "SupportsInterface": [
+        1695
+      ]
+    },
+    "id": 1696,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1665,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:16"
+      },
+      {
+        "absolutePath": "/home/cenz/dev/dapps/dist-market/contracts/utils/erc165.sol",
+        "file": "./erc165.sol",
+        "id": 1666,
+        "nodeType": "ImportDirective",
+        "scope": 1696,
+        "sourceUnit": 1664,
+        "src": "24:22:16",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1667,
+              "name": "ERC165",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1663,
+              "src": "161:6:16",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC165_$1663",
+                "typeString": "contract ERC165"
+              }
+            },
+            "id": 1668,
+            "nodeType": "InheritanceSpecifier",
+            "src": "161:6:16"
+          }
+        ],
+        "contractDependencies": [
+          1663
+        ],
+        "contractKind": "contract",
+        "documentation": "@dev Implementation of standard for detect smart contract interfaces.",
+        "fullyImplemented": true,
+        "id": 1695,
+        "linearizedBaseContracts": [
+          1695,
+          1663
+        ],
+        "name": "SupportsInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1672,
+            "name": "supportedInterfaces",
+            "nodeType": "VariableDeclaration",
+            "scope": 1695,
+            "src": "286:52:16",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes4_$_t_bool_$",
+              "typeString": "mapping(bytes4 => bool)"
+            },
+            "typeName": {
+              "id": 1671,
+              "keyType": {
+                "id": 1669,
+                "name": "bytes4",
+                "nodeType": "ElementaryTypeName",
+                "src": "294:6:16",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes4",
+                  "typeString": "bytes4"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "286:23:16",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes4_$_t_bool_$",
+                "typeString": "mapping(bytes4 => bool)"
+              },
+              "valueType": {
+                "id": 1670,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "304:4:16",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 1681,
+              "nodeType": "Block",
+              "src": "415:59:16",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1679,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 1675,
+                        "name": "supportedInterfaces",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1672,
+                        "src": "421:19:16",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_bytes4_$_t_bool_$",
+                          "typeString": "mapping(bytes4 => bool)"
+                        }
+                      },
+                      "id": 1677,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "hexValue": "30783031666663396137",
+                        "id": 1676,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "441:10:16",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_33540519_by_1",
+                          "typeString": "int_const 33540519"
+                        },
+                        "value": "0x01ffc9a7"
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "421:31:16",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 1678,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "455:4:16",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "421:38:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 1680,
+                  "nodeType": "ExpressionStatement",
+                  "src": "421:38:16"
+                }
+              ]
+            },
+            "documentation": "@dev Contract constructor.",
+            "id": 1682,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1673,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "398:2:16"
+            },
+            "returnParameters": {
+              "id": 1674,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "415:0:16"
+            },
+            "scope": 1695,
+            "src": "387:87:16",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1693,
+              "nodeType": "Block",
+              "src": "776:51:16",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 1689,
+                      "name": "supportedInterfaces",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1672,
+                      "src": "789:19:16",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_bytes4_$_t_bool_$",
+                        "typeString": "mapping(bytes4 => bool)"
+                      }
+                    },
+                    "id": 1691,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 1690,
+                      "name": "_interfaceID",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1684,
+                      "src": "809:12:16",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes4",
+                        "typeString": "bytes4"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "789:33:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 1688,
+                  "id": 1692,
+                  "nodeType": "Return",
+                  "src": "782:40:16"
+                }
+              ]
+            },
+            "documentation": "@dev Function to check which interfaces are suported by this contract.\n@param _interfaceID Id of the interface.\n@return True if _interfaceID is supported, false otherwise.",
+            "id": 1694,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "supportsInterface",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1685,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1684,
+                  "name": "_interfaceID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1694,
+                  "src": "709:19:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 1683,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "709:6:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "703:29:16"
+            },
+            "returnParameters": {
+              "id": 1688,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1687,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1694,
+                  "src": "768:4:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1686,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "768:4:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "767:6:16"
+            },
+            "scope": 1695,
+            "src": "677:150:16",
+            "stateMutability": "view",
+            "superFunction": 1662,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1696,
+        "src": "129:701:16"
+      }
+    ],
+    "src": "0:831:16"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/cenz/dev/dapps/dist-market/contracts/utils/supports-interface.sol",
+    "exportedSymbols": {
+      "SupportsInterface": [
+        1695
+      ]
+    },
+    "id": 1696,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1665,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:16"
+      },
+      {
+        "absolutePath": "/home/cenz/dev/dapps/dist-market/contracts/utils/erc165.sol",
+        "file": "./erc165.sol",
+        "id": 1666,
+        "nodeType": "ImportDirective",
+        "scope": 1696,
+        "sourceUnit": 1664,
+        "src": "24:22:16",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1667,
+              "name": "ERC165",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1663,
+              "src": "161:6:16",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC165_$1663",
+                "typeString": "contract ERC165"
+              }
+            },
+            "id": 1668,
+            "nodeType": "InheritanceSpecifier",
+            "src": "161:6:16"
+          }
+        ],
+        "contractDependencies": [
+          1663
+        ],
+        "contractKind": "contract",
+        "documentation": "@dev Implementation of standard for detect smart contract interfaces.",
+        "fullyImplemented": true,
+        "id": 1695,
+        "linearizedBaseContracts": [
+          1695,
+          1663
+        ],
+        "name": "SupportsInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1672,
+            "name": "supportedInterfaces",
+            "nodeType": "VariableDeclaration",
+            "scope": 1695,
+            "src": "286:52:16",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes4_$_t_bool_$",
+              "typeString": "mapping(bytes4 => bool)"
+            },
+            "typeName": {
+              "id": 1671,
+              "keyType": {
+                "id": 1669,
+                "name": "bytes4",
+                "nodeType": "ElementaryTypeName",
+                "src": "294:6:16",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes4",
+                  "typeString": "bytes4"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "286:23:16",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes4_$_t_bool_$",
+                "typeString": "mapping(bytes4 => bool)"
+              },
+              "valueType": {
+                "id": 1670,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "304:4:16",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 1681,
+              "nodeType": "Block",
+              "src": "415:59:16",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1679,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 1675,
+                        "name": "supportedInterfaces",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1672,
+                        "src": "421:19:16",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_bytes4_$_t_bool_$",
+                          "typeString": "mapping(bytes4 => bool)"
+                        }
+                      },
+                      "id": 1677,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "hexValue": "30783031666663396137",
+                        "id": 1676,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "441:10:16",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_33540519_by_1",
+                          "typeString": "int_const 33540519"
+                        },
+                        "value": "0x01ffc9a7"
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "421:31:16",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 1678,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "455:4:16",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "421:38:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 1680,
+                  "nodeType": "ExpressionStatement",
+                  "src": "421:38:16"
+                }
+              ]
+            },
+            "documentation": "@dev Contract constructor.",
+            "id": 1682,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1673,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "398:2:16"
+            },
+            "returnParameters": {
+              "id": 1674,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "415:0:16"
+            },
+            "scope": 1695,
+            "src": "387:87:16",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1693,
+              "nodeType": "Block",
+              "src": "776:51:16",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 1689,
+                      "name": "supportedInterfaces",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1672,
+                      "src": "789:19:16",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_bytes4_$_t_bool_$",
+                        "typeString": "mapping(bytes4 => bool)"
+                      }
+                    },
+                    "id": 1691,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 1690,
+                      "name": "_interfaceID",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1684,
+                      "src": "809:12:16",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes4",
+                        "typeString": "bytes4"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "789:33:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 1688,
+                  "id": 1692,
+                  "nodeType": "Return",
+                  "src": "782:40:16"
+                }
+              ]
+            },
+            "documentation": "@dev Function to check which interfaces are suported by this contract.\n@param _interfaceID Id of the interface.\n@return True if _interfaceID is supported, false otherwise.",
+            "id": 1694,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "supportsInterface",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1685,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1684,
+                  "name": "_interfaceID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1694,
+                  "src": "709:19:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 1683,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "709:6:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "703:29:16"
+            },
+            "returnParameters": {
+              "id": 1688,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1687,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1694,
+                  "src": "768:4:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1686,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "768:4:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "767:6:16"
+            },
+            "scope": 1695,
+            "src": "677:150:16",
+            "stateMutability": "view",
+            "superFunction": 1662,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1696,
+        "src": "129:701:16"
+      }
+    ],
+    "src": "0:831:16"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.6+commit.b259423e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.11",
+  "updatedAt": "2019-06-18T23:41:03.061Z",
+  "devdoc": {
+    "details": "Implementation of standard for detect smart contract interfaces.",
+    "methods": {
+      "constructor": {
+        "details": "Contract constructor."
+      },
+      "supportsInterface(bytes4)": {
+        "details": "Function to check which interfaces are suported by this contract.",
+        "params": {
+          "_interfaceID": "Id of the interface."
+        },
+        "return": "True if _interfaceID is supported, false otherwise."
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

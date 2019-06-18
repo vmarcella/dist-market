@@ -1,0 +1,1507 @@
+{
+  "contractName": "NFTokenEnumerableMock",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_interfaceID",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getApproved",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_approved",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "name": "_index",
+          "type": "uint256"
+        }
+      ],
+      "name": "tokenOfOwnerByIndex",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "safeTransferFrom",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_index",
+          "type": "uint256"
+        }
+      ],
+      "name": "tokenByIndex",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ZERO_ADDRESS",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "ownerOf",
+      "outputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "NOT_OWNER",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_operator",
+          "type": "address"
+        },
+        {
+          "name": "_approved",
+          "type": "bool"
+        }
+      ],
+      "name": "setApprovalForAll",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        },
+        {
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "safeTransferFrom",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "name": "_operator",
+          "type": "address"
+        }
+      ],
+      "name": "isApprovedForAll",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_approved",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_approved",
+          "type": "bool"
+        }
+      ],
+      "name": "ApprovalForAll",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "mint",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "burn",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.6+commit.b259423e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"_interfaceID\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_approved\",\"type\":\"address\"},{\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_from\",\"type\":\"address\"},{\"name\":\"_to\",\"type\":\"address\"},{\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_owner\",\"type\":\"address\"},{\"name\":\"_index\",\"type\":\"uint256\"}],\"name\":\"tokenOfOwnerByIndex\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_to\",\"type\":\"address\"},{\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_from\",\"type\":\"address\"},{\"name\":\"_to\",\"type\":\"address\"},{\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"burn\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_index\",\"type\":\"uint256\"}],\"name\":\"tokenByIndex\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"ZERO_ADDRESS\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"name\":\"_owner\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"NOT_OWNER\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_operator\",\"type\":\"address\"},{\"name\":\"_approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_from\",\"type\":\"address\"},{\"name\":\"_to\",\"type\":\"address\"},{\"name\":\"_tokenId\",\"type\":\"uint256\"},{\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_owner\",\"type\":\"address\"},{\"name\":\"_operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"_from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"_to\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"_owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"_approved\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"_owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"_operator\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"_approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"}],\"devdoc\":{\"details\":\"This is an example contract implementation of NFToken with enumerable extension.\",\"methods\":{\"approve(address,uint256)\":{\"details\":\"Set or reaffirm the approved address for an NFT. This function can be changed to payable.\",\"params\":{\"_approved\":\"Address to be approved for the given NFT ID.\",\"_tokenId\":\"ID of the token to be approved.\"}},\"balanceOf(address)\":{\"details\":\"Returns the number of NFTs owned by `_owner`. NFTs assigned to the zero address are considered invalid, and this function throws for queries about the zero address.\",\"params\":{\"_owner\":\"Address for whom to query the balance.\"},\"return\":\"Balance of _owner.\"},\"burn(uint256)\":{\"details\":\"Removes a NFT from owner.\",\"params\":{\"_tokenId\":\"Which NFT we want to remove.\"}},\"getApproved(uint256)\":{\"details\":\"Get the approved address for a single NFT.\",\"params\":{\"_tokenId\":\"ID of the NFT to query the approval of.\"},\"return\":\"Address that _tokenId is approved for. \"},\"isApprovedForAll(address,address)\":{\"details\":\"Checks if `_operator` is an approved operator for `_owner`.\",\"params\":{\"_operator\":\"The address that acts on behalf of the owner.\",\"_owner\":\"The address that owns the NFTs.\"},\"return\":\"True if approved for all, false otherwise.\"},\"mint(address,uint256)\":{\"details\":\"Mints a new NFT.\",\"params\":{\"_to\":\"The address that will own the minted NFT.\",\"_tokenId\":\"of the NFT to be minted by the msg.sender.\"}},\"ownerOf(uint256)\":{\"details\":\"Returns the address of the owner of the NFT. NFTs assigned to zero address are considered invalid, and queries about them do throw.\",\"params\":{\"_tokenId\":\"The identifier for an NFT.\"},\"return\":\"Address of _tokenId owner.\"},\"safeTransferFrom(address,address,uint256)\":{\"details\":\"Transfers the ownership of an NFT from one address to another address. This function can be changed to payable.\",\"params\":{\"_from\":\"The current owner of the NFT.\",\"_to\":\"The new owner.\",\"_tokenId\":\"The NFT to transfer.\"}},\"safeTransferFrom(address,address,uint256,bytes)\":{\"details\":\"Transfers the ownership of an NFT from one address to another address. This function can be changed to payable.\",\"params\":{\"_data\":\"Additional data with no specified format, sent in call to `_to`.\",\"_from\":\"The current owner of the NFT.\",\"_to\":\"The new owner.\",\"_tokenId\":\"The NFT to transfer.\"}},\"setApprovalForAll(address,bool)\":{\"details\":\"Enables or disables approval for a third party (\\\"operator\\\") to manage all of `msg.sender`'s assets. It also emits the ApprovalForAll event.\",\"params\":{\"_approved\":\"True if the operators is approved, false to revoke approval.\",\"_operator\":\"Address to add to the set of authorized operators.\"}},\"supportsInterface(bytes4)\":{\"details\":\"Function to check which interfaces are suported by this contract.\",\"params\":{\"_interfaceID\":\"Id of the interface.\"},\"return\":\"True if _interfaceID is supported, false otherwise.\"},\"tokenByIndex(uint256)\":{\"details\":\"Returns NFT ID by its index.\",\"params\":{\"_index\":\"A counter less than `totalSupply()`.\"},\"return\":\"Token id.\"},\"tokenOfOwnerByIndex(address,uint256)\":{\"details\":\"returns the n-th NFT ID from a list of owner's tokens.\",\"params\":{\"_index\":\"Index number representing n-th token in owner's list of tokens.\",\"_owner\":\"Token owner's address.\"},\"return\":\"Token id.\"},\"totalSupply()\":{\"details\":\"Returns the count of all existing NFTokens.\",\"return\":\"Total supply of NFTs.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"Throws unless `msg.sender` is the current owner, an authorized operator, or the approved address for this NFT. Throws if `_from` is not the current owner. Throws if `_to` is the zero address. Throws if `_tokenId` is not a valid NFT. This function can be changed to payable.\",\"params\":{\"_from\":\"The current owner of the NFT.\",\"_to\":\"The new owner.\",\"_tokenId\":\"The NFT to transfer.\"}},\"transferOwnership(address)\":{\"details\":\"Allows the current owner to transfer control of the contract to a newOwner.\",\"params\":{\"_newOwner\":\"The address to transfer ownership to.\"}}}},\"userdoc\":{\"methods\":{\"approve(address,uint256)\":{\"notice\":\"The zero address indicates there is no approved address. Throws unless `msg.sender` is the current NFT owner, or an authorized operator of the current owner.\"},\"getApproved(uint256)\":{\"notice\":\"Throws if `_tokenId` is not a valid NFT.\"},\"safeTransferFrom(address,address,uint256)\":{\"notice\":\"This works identically to the other function with an extra data parameter, except this function just sets data to \\\"\\\"\"},\"safeTransferFrom(address,address,uint256,bytes)\":{\"notice\":\"Throws unless `msg.sender` is the current owner, an authorized operator, or the approved address for this NFT. Throws if `_from` is not the current owner. Throws if `_to` is the zero address. Throws if `_tokenId` is not a valid NFT. When transfer is complete, this function checks if `_to` is a smart contract (code size > 0). If so, it calls  `onERC721Received` on `_to` and throws if the return value is not  `bytes4(keccak256(\\\"onERC721Received(address,uint256,bytes)\\\"))`.\"},\"setApprovalForAll(address,bool)\":{\"notice\":\"This works even if sender doesn't own any tokens at the time.\"},\"transferFrom(address,address,uint256)\":{\"notice\":\"The caller is responsible to confirm that `_to` is capable of receiving NFTs or else they maybe be permanently lost.\"}}}},\"settings\":{\"compilationTarget\":{\"/home/cenz/dev/dapps/dist-market/contracts/mocks/nf-token-enumerable-mock.sol\":\"NFTokenEnumerableMock\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/cenz/dev/dapps/dist-market/contracts/math/safe-math.sol\":{\"keccak256\":\"0xe936b6ff43908009400cf525f3b7270759ffdd86b0e3e16d783fe6327cb9d114\",\"urls\":[\"bzzr://2d8aebb931327f2e37ca529d3c2188ec3723aa368ed0d26d27712150d77b8a1f\"]},\"/home/cenz/dev/dapps/dist-market/contracts/mocks/nf-token-enumerable-mock.sol\":{\"keccak256\":\"0xad264fda6bd133a8e7e088a11d6a15a4002030f29b67e95c303e0f2708b91be6\",\"urls\":[\"bzzr://08269f97e60d0ee06a0315d1926c27b65db11c963217bef6bae8a34172b389fc\"]},\"/home/cenz/dev/dapps/dist-market/contracts/ownership/ownable.sol\":{\"keccak256\":\"0x3626628fad9f85b890894ddeeebcdbb84a53b4ae66dcdd9e763d351b5b8f06a1\",\"urls\":[\"bzzr://2cb9ca9aeb89e26ca2325530db416a6582179b8e18a045769e15a0c1a39bea40\"]},\"/home/cenz/dev/dapps/dist-market/contracts/tokens/erc721-enumerable.sol\":{\"keccak256\":\"0x1495010755e8f26c00cb28e8b5376fc26854bc5b6b7d73e05af31efa0c1141d3\",\"urls\":[\"bzzr://5a68e0561dc990ecc7f60d3babb57c7fb23ec9afdb54a7e3e5fffb00558008a5\"]},\"/home/cenz/dev/dapps/dist-market/contracts/tokens/erc721-token-receiver.sol\":{\"keccak256\":\"0xe0e55177d05bc12be9fa851a6382eaa2c6b2f097e53e86a852bdcdb2a11b7c6d\",\"urls\":[\"bzzr://e5df87609151ff5dc6b7d17f1fd54139c580029075f9dc88f359280269029e25\"]},\"/home/cenz/dev/dapps/dist-market/contracts/tokens/erc721.sol\":{\"keccak256\":\"0x16ef833eea7b2363ee4c8497aab83ee5fd1d013ced37de887183ec1cebdd0f3f\",\"urls\":[\"bzzr://ac8a0c9a941c6e58b6a125832c2d36e71afbee27472b02f36f7405d8c6a6f975\"]},\"/home/cenz/dev/dapps/dist-market/contracts/tokens/nf-token-enumerable.sol\":{\"keccak256\":\"0xce9a1c04761dc0fe009ce511ced588dd5e5c3d9d543219233585dc645b710e12\",\"urls\":[\"bzzr://c52bf794b83c9fe503dc8b99289aa17572a911b777002042fc11c8285af41914\"]},\"/home/cenz/dev/dapps/dist-market/contracts/tokens/nf-token.sol\":{\"keccak256\":\"0x0c8df921b003b0fce87f9b6a5936eada708edf1e1bfa8773706d36302e297296\",\"urls\":[\"bzzr://74184caf1cf6f1b89bfe7c838b17ea055578161b328c0e0975f682b743f10ee2\"]},\"/home/cenz/dev/dapps/dist-market/contracts/utils/address-utils.sol\":{\"keccak256\":\"0xb3c900fedd972a6c026644f2d0c79d24e351037cfc3a8087725acf1b7c274f14\",\"urls\":[\"bzzr://00822e6b2d99d20a4e3a890e630767720d762d9da024c321bbe75d717a825f38\"]},\"/home/cenz/dev/dapps/dist-market/contracts/utils/erc165.sol\":{\"keccak256\":\"0x16d9fe594763fe1661894f85cbe5e959fecab1a56b415a7607d1e72ac399d479\",\"urls\":[\"bzzr://0a81c80d1ef4ae57eb036a3cc3da90d75ffbc598bc9ca6c40233cee0bd6f0395\"]},\"/home/cenz/dev/dapps/dist-market/contracts/utils/supports-interface.sol\":{\"keccak256\":\"0x31d1dbd3430a09264e505840d2c19b4fbfc80212073aeaf61bd400b630d69ec6\",\"urls\":[\"bzzr://68d8f15c5f510493f95854cd593228652a17a1f0e9b17784f95d4367f33c33dd\"]}},\"version\":1}",
+  "bytecode": "0x6080604052600060208190527f67be87c3ff9960ca1e9cfac5cab2ff4747269cf9ed20c9b7306235ac35a491c5805460ff1990811660019081179092557ff7815fccbf112960a73756e185887fedcb9fc64ca0a16cc5923b7960ed78080080548216831790557f780e9d63000000000000000000000000000000000000000000000000000000009092527f77b7bbe0e49b76487c9476b5db3354cf5270619d0037ccb899c2a4c4a75b43188054909216179055600980546001600160a01b031916331790556112ae806100d36000396000f3fe608060405234801561001057600080fd5b50600436106101215760003560e01c80634f6ccce7116100ad5780638da5cb5b116100715780638da5cb5b146103a8578063a22cb465146103b0578063b88d4fde146103de578063e985e9c51461046e578063f2fde38b1461049c57610121565b80634f6ccce7146102c3578063538ba4f9146102e05780636352211e1461035d57806370a082311461037a57806371d78b12146103a057610121565b806323b872dd116100f457806323b872dd146101e25780632f745c591461021857806340c10f191461024457806342842e0e1461027057806342966c68146102a657610121565b806301ffc9a714610126578063081812fc14610161578063095ea7b31461019a57806318160ddd146101c8575b600080fd5b61014d6004803603602081101561013c57600080fd5b50356001600160e01b0319166104c2565b604080519115158252519081900360200190f35b61017e6004803603602081101561017757600080fd5b50356104e5565b604080516001600160a01b039092168252519081900360200190f35b6101c6600480360360408110156101b057600080fd5b506001600160a01b038135169060200135610525565b005b6101d0610624565b60408051918252519081900360200190f35b6101c6600480360360608110156101f857600080fd5b506001600160a01b0381358116916020810135909116906040013561062b565b6101d06004803603604081101561022e57600080fd5b506001600160a01b038135169060200135610711565b6101c66004803603604081101561025a57600080fd5b506001600160a01b03813516906020013561076c565b6101c66004803603606081101561028657600080fd5b506001600160a01b03813581169160208101359091169060400135610835565b6101c6600480360360208110156102bc57600080fd5b5035610855565b6101d0600480360360208110156102d957600080fd5b50356108df565b6102e861090f565b6040805160208082528351818301528351919283929083019185019080838360005b8381101561032257818101518382015260200161030a565b50505050905090810190601f16801561034f5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61017e6004803603602081101561037357600080fd5b5035610934565b6101d06004803603602081101561039057600080fd5b50356001600160a01b0316610956565b6102e861097a565b61017e61099f565b6101c6600480360360408110156103c657600080fd5b506001600160a01b03813516906020013515156109ae565b6101c6600480360360808110156103f457600080fd5b6001600160a01b0382358116926020810135909116916040820135919081019060808101606082013564010000000081111561042f57600080fd5b82018360208201111561044157600080fd5b8035906020019184600183028401116401000000008311171561046357600080fd5b509092509050610a1c565b61014d6004803603604081101561048457600080fd5b506001600160a01b0381358116916020013516610a65565b6101c6600480360360208110156104b257600080fd5b50356001600160a01b0316610a93565b6001600160e01b0319811660009081526020819052604090205460ff165b919050565b60008181526001602052604081205482906001600160a01b031661050857600080fd5b50506000908152600260205260409020546001600160a01b031690565b60008181526001602052604090205481906001600160a01b03163381148061057057506001600160a01b038116600090815260046020908152604080832033845290915290205460ff165b61057957600080fd5b60008381526001602052604090205483906001600160a01b031661059c57600080fd5b6000848152600160205260409020546001600160a01b039081169086168114156105c557600080fd5b60008581526002602052604080822080546001600160a01b0319166001600160a01b038a811691821790925591518893918516917f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b92591a4505050505050565b6005545b90565b60008181526001602052604090205481906001600160a01b03163381148061066957506000828152600260205260409020546001600160a01b031633145b8061069757506001600160a01b038116600090815260046020908152604080832033845290915290205460ff165b6106a057600080fd5b60008381526001602052604090205483906001600160a01b03166106c357600080fd5b6000848152600160205260409020546001600160a01b0390811690871681146106eb57600080fd5b6001600160a01b0386166106fe57600080fd5b6107088686610be6565b50505050505050565b6001600160a01b038216600090815260076020526040812054821061073557600080fd5b6001600160a01b038316600090815260076020526040902080548390811061075957fe5b9060005260206000200154905092915050565b6009546040805180820190915260068152600160d01b65303138303031026020820152906001600160a01b0316331461082657604051600160e51b62461bcd0281526004018080602001828103825283818151815260200191508051906020019080838360005b838110156107eb5781810151838201526020016107d3565b50505050905090810190601f1680156108185780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b506108318282610c61565b5050565b61085083838360405180602001604052806000815250610caf565b505050565b6009546040805180820190915260068152600160d01b65303138303031026020820152906001600160a01b031633146108d257604051600160e51b62461bcd0281526020600482018181528351602484015283519092839260449091019190850190808383600083156107eb5781810151838201526020016107d3565b506108dc81610ec9565b50565b60055460009082106108f057600080fd5b600582815481106108fd57fe5b90600052602060002001549050919050565b604051806040016040528060068152602001600160d11b6518189c1818190281525081565b6000818152600160205260409020546001600160a01b0316806104e057600080fd5b60006001600160a01b03821661096b57600080fd5b61097482610f51565b92915050565b604051806040016040528060068152602001600160d01b653031383030310281525081565b6009546001600160a01b031681565b3360008181526004602090815260408083206001600160a01b03871680855290835292819020805460ff1916861515908117909155815190815290519293927f17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31929181900390910190a35050565b610a5e85858585858080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250610caf92505050565b5050505050565b6001600160a01b03918216600090815260046020908152604080832093909416825291909152205460ff1690565b6009546040805180820190915260068152600160d01b65303138303031026020820152906001600160a01b03163314610b1057604051600160e51b62461bcd0281526020600482018181528351602484015283519092839260449091019190850190808383600083156107eb5781810151838201526020016107d3565b506040805180820190915260068152600160d11b6518189c1818190260208201526001600160a01b038216610b8957604051600160e51b62461bcd0281526020600482018181528351602484015283519092839260449091019190850190808383600083156107eb5781810151838201526020016107d3565b506009546040516001600160a01b038084169216907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e090600090a3600980546001600160a01b0319166001600160a01b0392909216919091179055565b6000818152600160205260409020546001600160a01b0316610c0782610f6c565b610c118183610fa7565b610c1b83836110bf565b81836001600160a01b0316826001600160a01b03167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef60405160405180910390a4505050565b610c6b8282611139565b60058054600181019091557f036b6384b5eca791c62761152d0c79bb0604c104a5fb6f4eb0703f3154bb3db081018290556000918252600660205260409091205550565b60008281526001602052604090205482906001600160a01b031633811480610ced57506000828152600260205260409020546001600160a01b031633145b80610d1b57506001600160a01b038116600090815260046020908152604080832033845290915290205460ff165b610d2457600080fd5b60008481526001602052604090205484906001600160a01b0316610d4757600080fd5b6000858152600160205260409020546001600160a01b039081169088168114610d6f57600080fd5b6001600160a01b038716610d8257600080fd5b610d8c8787610be6565b610d9e876001600160a01b03166111b4565b15610ebf57604051600160e11b630a85bd0102815233600482018181526001600160a01b038b81166024850152604484018a9052608060648501908152895160848601528951600095928d169463150b7a029490938f938e938e939260a4019060208501908083838e5b83811015610e20578181015183820152602001610e08565b50505050905090810190601f168015610e4d5780820380516001836020036101000a031916815260200191505b5095505050505050602060405180830381600087803b158015610e6f57600080fd5b505af1158015610e83573d6000803e3d6000fd5b505050506040513d6020811015610e9957600080fd5b505190506001600160e01b03198116600160e11b630a85bd010214610ebd57600080fd5b505b5050505050505050565b610ed2816111ba565b60008181526006602052604081205460058054919260001983019290919083908110610efa57fe5b906000526020600020015490508060058481548110610f1557fe5b6000918252602090912001556005805490610f34906000198301611245565b506000908152600660205260408082209390935592835250812055565b6001600160a01b031660009081526007602052604090205490565b6000818152600260205260409020546001600160a01b0316156108dc57600090815260026020526040902080546001600160a01b0319169055565b6000818152600160205260409020546001600160a01b03838116911614610fcd57600080fd5b600081815260016020908152604080832080546001600160a01b031916905560088252808320546001600160a01b038616845260079092529091205460001901808214611096576001600160a01b038416600090815260076020526040812080548390811061103857fe5b906000526020600020015490508060076000876001600160a01b03166001600160a01b03168152602001908152602001600020848154811061107657fe5b600091825260208083209091019290925591825260089052604090208290555b6001600160a01b0384166000908152600760205260409020805490610a5e906000198301611245565b6000818152600160205260409020546001600160a01b0316156110e157600080fd5b600081815260016020818152604080842080546001600160a01b039097166001600160a01b03199097168717905594835260078152848320805492830181558352808320820184905592825260089092529190912055565b6001600160a01b03821661114c57600080fd5b6000818152600160205260409020546001600160a01b03161561116e57600080fd5b61117882826110bf565b60405181906001600160a01b038416906000907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef908290a45050565b3b151590565b60008181526001602052604090205481906001600160a01b03166111dd57600080fd5b6000828152600160205260409020546001600160a01b03166111fe83610f6c565b6112088184610fa7565b60405183906000906001600160a01b038416907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef908390a4505050565b8154818355818111156108505760008381526020902061085091810190830161062891905b8082111561127e576000815560010161126a565b509056fea165627a7a72305820aefa73f606d79fc62b1881410cf997cfe26d2a57b692f2afa06c71e7c62779440029",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106101215760003560e01c80634f6ccce7116100ad5780638da5cb5b116100715780638da5cb5b146103a8578063a22cb465146103b0578063b88d4fde146103de578063e985e9c51461046e578063f2fde38b1461049c57610121565b80634f6ccce7146102c3578063538ba4f9146102e05780636352211e1461035d57806370a082311461037a57806371d78b12146103a057610121565b806323b872dd116100f457806323b872dd146101e25780632f745c591461021857806340c10f191461024457806342842e0e1461027057806342966c68146102a657610121565b806301ffc9a714610126578063081812fc14610161578063095ea7b31461019a57806318160ddd146101c8575b600080fd5b61014d6004803603602081101561013c57600080fd5b50356001600160e01b0319166104c2565b604080519115158252519081900360200190f35b61017e6004803603602081101561017757600080fd5b50356104e5565b604080516001600160a01b039092168252519081900360200190f35b6101c6600480360360408110156101b057600080fd5b506001600160a01b038135169060200135610525565b005b6101d0610624565b60408051918252519081900360200190f35b6101c6600480360360608110156101f857600080fd5b506001600160a01b0381358116916020810135909116906040013561062b565b6101d06004803603604081101561022e57600080fd5b506001600160a01b038135169060200135610711565b6101c66004803603604081101561025a57600080fd5b506001600160a01b03813516906020013561076c565b6101c66004803603606081101561028657600080fd5b506001600160a01b03813581169160208101359091169060400135610835565b6101c6600480360360208110156102bc57600080fd5b5035610855565b6101d0600480360360208110156102d957600080fd5b50356108df565b6102e861090f565b6040805160208082528351818301528351919283929083019185019080838360005b8381101561032257818101518382015260200161030a565b50505050905090810190601f16801561034f5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61017e6004803603602081101561037357600080fd5b5035610934565b6101d06004803603602081101561039057600080fd5b50356001600160a01b0316610956565b6102e861097a565b61017e61099f565b6101c6600480360360408110156103c657600080fd5b506001600160a01b03813516906020013515156109ae565b6101c6600480360360808110156103f457600080fd5b6001600160a01b0382358116926020810135909116916040820135919081019060808101606082013564010000000081111561042f57600080fd5b82018360208201111561044157600080fd5b8035906020019184600183028401116401000000008311171561046357600080fd5b509092509050610a1c565b61014d6004803603604081101561048457600080fd5b506001600160a01b0381358116916020013516610a65565b6101c6600480360360208110156104b257600080fd5b50356001600160a01b0316610a93565b6001600160e01b0319811660009081526020819052604090205460ff165b919050565b60008181526001602052604081205482906001600160a01b031661050857600080fd5b50506000908152600260205260409020546001600160a01b031690565b60008181526001602052604090205481906001600160a01b03163381148061057057506001600160a01b038116600090815260046020908152604080832033845290915290205460ff165b61057957600080fd5b60008381526001602052604090205483906001600160a01b031661059c57600080fd5b6000848152600160205260409020546001600160a01b039081169086168114156105c557600080fd5b60008581526002602052604080822080546001600160a01b0319166001600160a01b038a811691821790925591518893918516917f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b92591a4505050505050565b6005545b90565b60008181526001602052604090205481906001600160a01b03163381148061066957506000828152600260205260409020546001600160a01b031633145b8061069757506001600160a01b038116600090815260046020908152604080832033845290915290205460ff165b6106a057600080fd5b60008381526001602052604090205483906001600160a01b03166106c357600080fd5b6000848152600160205260409020546001600160a01b0390811690871681146106eb57600080fd5b6001600160a01b0386166106fe57600080fd5b6107088686610be6565b50505050505050565b6001600160a01b038216600090815260076020526040812054821061073557600080fd5b6001600160a01b038316600090815260076020526040902080548390811061075957fe5b9060005260206000200154905092915050565b6009546040805180820190915260068152600160d01b65303138303031026020820152906001600160a01b0316331461082657604051600160e51b62461bcd0281526004018080602001828103825283818151815260200191508051906020019080838360005b838110156107eb5781810151838201526020016107d3565b50505050905090810190601f1680156108185780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b506108318282610c61565b5050565b61085083838360405180602001604052806000815250610caf565b505050565b6009546040805180820190915260068152600160d01b65303138303031026020820152906001600160a01b031633146108d257604051600160e51b62461bcd0281526020600482018181528351602484015283519092839260449091019190850190808383600083156107eb5781810151838201526020016107d3565b506108dc81610ec9565b50565b60055460009082106108f057600080fd5b600582815481106108fd57fe5b90600052602060002001549050919050565b604051806040016040528060068152602001600160d11b6518189c1818190281525081565b6000818152600160205260409020546001600160a01b0316806104e057600080fd5b60006001600160a01b03821661096b57600080fd5b61097482610f51565b92915050565b604051806040016040528060068152602001600160d01b653031383030310281525081565b6009546001600160a01b031681565b3360008181526004602090815260408083206001600160a01b03871680855290835292819020805460ff1916861515908117909155815190815290519293927f17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31929181900390910190a35050565b610a5e85858585858080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250610caf92505050565b5050505050565b6001600160a01b03918216600090815260046020908152604080832093909416825291909152205460ff1690565b6009546040805180820190915260068152600160d01b65303138303031026020820152906001600160a01b03163314610b1057604051600160e51b62461bcd0281526020600482018181528351602484015283519092839260449091019190850190808383600083156107eb5781810151838201526020016107d3565b506040805180820190915260068152600160d11b6518189c1818190260208201526001600160a01b038216610b8957604051600160e51b62461bcd0281526020600482018181528351602484015283519092839260449091019190850190808383600083156107eb5781810151838201526020016107d3565b506009546040516001600160a01b038084169216907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e090600090a3600980546001600160a01b0319166001600160a01b0392909216919091179055565b6000818152600160205260409020546001600160a01b0316610c0782610f6c565b610c118183610fa7565b610c1b83836110bf565b81836001600160a01b0316826001600160a01b03167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef60405160405180910390a4505050565b610c6b8282611139565b60058054600181019091557f036b6384b5eca791c62761152d0c79bb0604c104a5fb6f4eb0703f3154bb3db081018290556000918252600660205260409091205550565b60008281526001602052604090205482906001600160a01b031633811480610ced57506000828152600260205260409020546001600160a01b031633145b80610d1b57506001600160a01b038116600090815260046020908152604080832033845290915290205460ff165b610d2457600080fd5b60008481526001602052604090205484906001600160a01b0316610d4757600080fd5b6000858152600160205260409020546001600160a01b039081169088168114610d6f57600080fd5b6001600160a01b038716610d8257600080fd5b610d8c8787610be6565b610d9e876001600160a01b03166111b4565b15610ebf57604051600160e11b630a85bd0102815233600482018181526001600160a01b038b81166024850152604484018a9052608060648501908152895160848601528951600095928d169463150b7a029490938f938e938e939260a4019060208501908083838e5b83811015610e20578181015183820152602001610e08565b50505050905090810190601f168015610e4d5780820380516001836020036101000a031916815260200191505b5095505050505050602060405180830381600087803b158015610e6f57600080fd5b505af1158015610e83573d6000803e3d6000fd5b505050506040513d6020811015610e9957600080fd5b505190506001600160e01b03198116600160e11b630a85bd010214610ebd57600080fd5b505b5050505050505050565b610ed2816111ba565b60008181526006602052604081205460058054919260001983019290919083908110610efa57fe5b906000526020600020015490508060058481548110610f1557fe5b6000918252602090912001556005805490610f34906000198301611245565b506000908152600660205260408082209390935592835250812055565b6001600160a01b031660009081526007602052604090205490565b6000818152600260205260409020546001600160a01b0316156108dc57600090815260026020526040902080546001600160a01b0319169055565b6000818152600160205260409020546001600160a01b03838116911614610fcd57600080fd5b600081815260016020908152604080832080546001600160a01b031916905560088252808320546001600160a01b038616845260079092529091205460001901808214611096576001600160a01b038416600090815260076020526040812080548390811061103857fe5b906000526020600020015490508060076000876001600160a01b03166001600160a01b03168152602001908152602001600020848154811061107657fe5b600091825260208083209091019290925591825260089052604090208290555b6001600160a01b0384166000908152600760205260409020805490610a5e906000198301611245565b6000818152600160205260409020546001600160a01b0316156110e157600080fd5b600081815260016020818152604080842080546001600160a01b039097166001600160a01b03199097168717905594835260078152848320805492830181558352808320820184905592825260089092529190912055565b6001600160a01b03821661114c57600080fd5b6000818152600160205260409020546001600160a01b03161561116e57600080fd5b61117882826110bf565b60405181906001600160a01b038416906000907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef908290a45050565b3b151590565b60008181526001602052604090205481906001600160a01b03166111dd57600080fd5b6000828152600160205260409020546001600160a01b03166111fe83610f6c565b6112088184610fa7565b60405183906000906001600160a01b038416907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef908390a4505050565b8154818355818111156108505760008381526020902061085091810190830161062891905b8082111561127e576000815560010161126a565b509056fea165627a7a72305820aefa73f606d79fc62b1881410cf997cfe26d2a57b692f2afa06c71e7c62779440029",
+  "sourceMap": "214:560:2:-;;;421:19:16;:31;;;;;:38;;-1:-1:-1;;421:38:16;;;455:4;421:38;;;;;;3882:31:13;:38;;;;;;;;783:31:11;;;;;:38;;;;;;;;980:5:6;:18;;-1:-1:-1;;;;;;980:18:6;988:10;980:18;;;214:560:2;;;;;;",
+  "deployedSourceMap": "214:560:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;214:560:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;677:150:16;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;677:150:16;-1:-1:-1;;;;;;677:150:16;;:::i;:::-;;;;;;;;;;;;;;;;;;8853:160:13;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;8853:160:13;;:::i;:::-;;;;-1:-1:-1;;;;;8853:160:13;;;;;;;;;;;;;;6815:315;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;6815:315:13;;;;;;;;:::i;:::-;;951:100:11;;;:::i;:::-;;;;;;;;;;;;;;;;6103:300:13;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;6103:300:13;;;;;;;;;;;;;;;;;:::i;1575:212:11:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;1575:212:11;;;;;;;;:::i;445:123:2:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;445:123:2;;;;;;;;:::i;5380:157:13:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;5380:157:13;;;;;;;;;;;;;;;;;:::i;670:101:2:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;670:101:2;;:::i;1185:161:11:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;1185:161:11;;:::i;434:46:6:-;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;434:46:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8446:170:13;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;8446:170:13;;:::i;8028:167::-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;8028:167:13;-1:-1:-1;;;;;8028:167:13;;:::i;387:43:6:-;;;:::i;530:20::-;;;:::i;7532:210:13:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;7532:210:13;;;;;;;;;;:::i;4795:186::-;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;-1:-1;;;;;4795:186:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;4795:186:13;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;4795:186:13;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;-1:-1;4795:186:13;;-1:-1:-1;4795:186:13;-1:-1:-1;4795:186:13;:::i;9274:169::-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;9274:169:13;;;;;;;;;;:::i;1325:210:6:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;1325:210:6;-1:-1:-1;;;;;1325:210:6;;:::i;677:150:16:-;-1:-1:-1;;;;;;789:33:16;;768:4;789:33;;;;;;;;;;;;;677:150;;;;:::o;8853:160:13:-;8962:7;3755:19;;;:9;:19;;;;;;8939:8;;-1:-1:-1;;;;;3755:19:13;3747:42;;;;;;-1:-1:-1;;8986:22:13;;;;:12;:22;;;;;;-1:-1:-1;;;;;8986:22:13;;8853:160::o;6815:315::-;3051:18;3072:19;;;:9;:19;;;;;;6909:8;;-1:-1:-1;;;;;3072:19:13;3119:10;3105:24;;;:68;;-1:-1:-1;;;;;;3133:28:13;;;;;;:16;:28;;;;;;;;3162:10;3133:40;;;;;;;;;;3105:68;3097:77;;;;;;3786:1;3755:19;;;:9;:19;;;;;;6936:8;;-1:-1:-1;;;;;3755:19:13;3747:42;;;;;;6954:18;6975:19;;;:9;:19;;;;;;-1:-1:-1;;;;;6975:19:13;;;;7008:23;;;;;7000:32;;;;;;7039:22;;;;:12;:22;;;;;;:34;;-1:-1:-1;;;;;;7039:34:13;-1:-1:-1;;;;;7039:34:13;;;;;;;;;7084:41;;7039:22;;7084:41;;;;;;;3795:1;3180;6815:315;;;;:::o;951:100:11:-;1033:6;:13;951:100;;:::o;6103:300:13:-;3375:18;3396:19;;;:9;:19;;;;;;6216:8;;-1:-1:-1;;;;;3396:19:13;3450:10;3436:24;;;:70;;-1:-1:-1;3470:22:13;;;;:12;:22;;;;;;-1:-1:-1;;;;;3470:22:13;3496:10;3470:36;3436:70;:120;;;-1:-1:-1;;;;;;3516:28:13;;;;;;:16;:28;;;;;;;;3545:10;3516:40;;;;;;;;;;3436:120;3421:141;;;;;;3786:1;3755:19;;;:9;:19;;;;;;6243:8;;-1:-1:-1;;;;;3755:19:13;3747:42;;;;;;6261:18;6282:19;;;:9;:19;;;;;;-1:-1:-1;;;;;6282:19:13;;;;6315;;;;6307:28;;;;;;-1:-1:-1;;;;;6349:17:13;;6341:26;;;;;;6374:24;6384:3;6389:8;6374:9;:24::i;:::-;3795:1;3568;6103:300;;;;;:::o;1575:212:11:-;-1:-1:-1;;;;;1717:18:11;;1683:7;1717:18;;;:10;:18;;;;;:25;1708:34;;1700:43;;;;;;-1:-1:-1;;;;;1756:18:11;;;;;;:10;:18;;;;;:26;;1775:6;;1756:26;;;;;;;;;;;;;;1749:33;;1575:212;;;;:::o;445:123:2:-;1134:5:6;;1141:9;;;;;;;;;;;;-1:-1:-1;;;;;1141:9:6;;;;;-1:-1:-1;;;;;1134:5:6;1120:10;:19;1112:39;;;;-1:-1:-1;;;;;1112:39:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;1112:39:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;537:26:2;549:3;554:8;537:11;:26::i;:::-;445:123;;:::o;5380:157:13:-;5489:43;5507:5;5514:3;5519:8;5489:43;;;;;;;;;;;;:17;:43::i;:::-;5380:157;;;:::o;670:101:2:-;1134:5:6;;1141:9;;;;;;;;;;;;-1:-1:-1;;;;;1141:9:6;;;;;-1:-1:-1;;;;;1134:5:6;1120:10;:19;1112:39;;;;-1:-1:-1;;;;;1112:39:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;27:10:-1;;8:100;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;1112:39:6;;745:21:2;757:8;745:11;:21::i;:::-;670:101;:::o;1185:161:11:-;1300:6;:13;1266:7;;1291:22;;1283:31;;;;;;1327:6;1334;1327:14;;;;;;;;;;;;;;;;1320:21;;1185:161;;;:::o;434:46:6:-;;;;;;;;;;;;;;-1:-1:-1;;;;;434:46:6;;;;:::o;8446:170:13:-;8524:14;8557:19;;;:9;:19;;;;;;-1:-1:-1;;;;;8557:19:13;8590:20;8582:29;;;;;8028:167;8106:7;-1:-1:-1;;;;;8131:20:13;;8123:29;;;;;;8165:25;8183:6;8165:17;:25::i;:::-;8158:32;8028:167;-1:-1:-1;;8028:167:13:o;387:43:6:-;;;;;;;;;;;;;;-1:-1:-1;;;;;387:43:6;;;;:::o;530:20::-;;;-1:-1:-1;;;;;530:20:6;;:::o;7532:210:13:-;7644:10;7627:28;;;;:16;:28;;;;;;;;-1:-1:-1;;;;;7627:39:13;;;;;;;;;;;;:51;;-1:-1:-1;;7627:51:13;;;;;;;;;;7689:48;;;;;;;7627:39;;7644:10;7689:48;;;;;;;;;;;7532:210;;:::o;4795:186::-;4930:46;4948:5;4955:3;4960:8;4970:5;;4930:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;4930:17:13;;-1:-1:-1;;;4930:46:13:i;:::-;4795:186;;;;;:::o;9274:169::-;-1:-1:-1;;;;;9403:24:13;;;9382:4;9403:24;;;:16;:24;;;;;;;;:35;;;;;;;;;;;;;;;9274:169::o;1325:210:6:-;1134:5;;1141:9;;;;;;;;;;;;-1:-1:-1;;;;;1141:9:6;;;;;-1:-1:-1;;;;;1134:5:6;1120:10;:19;1112:39;;;;-1:-1:-1;;;;;1112:39:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;27:10:-1;;8:100;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;1112:39:6;-1:-1:-1;1445:12:6;;;;;;;;;;;;-1:-1:-1;;;;;1445:12:6;;;;-1:-1:-1;;;;;1420:23:6;;1412:46;;;;-1:-1:-1;;;;;1412:46:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;27:10:-1;;8:100;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;1412:46:6;-1:-1:-1;1490:5:6;;1469:38;;-1:-1:-1;;;;;1469:38:6;;;;1490:5;;1469:38;;1490:5;;1469:38;1513:5;:17;;-1:-1:-1;;;;;;1513:17:6;-1:-1:-1;;;;;1513:17:6;;;;;;;;;;1325:210::o;9626:262:13:-;9709:12;9724:19;;;:9;:19;;;;;;-1:-1:-1;;;;;9724:19:13;9749:24;9734:8;9749:14;:24::i;:::-;9780:30;9795:4;9801:8;9780:14;:30::i;:::-;9816:26;9828:3;9833:8;9816:11;:26::i;:::-;9874:8;9869:3;-1:-1:-1;;;;;9854:29:13;9863:4;-1:-1:-1;;;;;9854:29:13;;;;;;;;;;;9626:262;;;:::o;2168:192:11:-;2247:26;2259:3;2264:8;2247:11;:26::i;:::-;2296:6;27:10:-1;;39:1;23:18;;45:23;;;2296:21:11;;;;;;2279:14;2323:19;;;:9;2296:21;2323:19;;;;;:32;-1:-1:-1;2168:192:11:o;12843:520:13:-;3375:18;3396:19;;;:9;:19;;;;;;12984:8;;-1:-1:-1;;;;;3396:19:13;3450:10;3436:24;;;:70;;-1:-1:-1;3470:22:13;;;;:12;:22;;;;;;-1:-1:-1;;;;;3470:22:13;3496:10;3470:36;3436:70;:120;;;-1:-1:-1;;;;;;3516:28:13;;;;;;:16;:28;;;;;;;;3545:10;3516:40;;;;;;;;;;3436:120;3421:141;;;;;;3786:1;3755:19;;;:9;:19;;;;;;13011:8;;-1:-1:-1;;;;;3755:19:13;3747:42;;;;;;13029:18;13050:19;;;:9;:19;;;;;;-1:-1:-1;;;;;13050:19:13;;;;13083;;;;13075:28;;;;;;-1:-1:-1;;;;;13117:17:13;;13109:26;;;;;;13142:24;13152:3;13157:8;13142:9;:24::i;:::-;13177:16;:3;-1:-1:-1;;;;;13177:14:13;;:16::i;:::-;13173:186;;;13224:77;;-1:-1:-1;;;;;13224:77:13;;13266:10;13224:77;;;;;;-1:-1:-1;;;;;13224:77:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;13208:13;;13224:41;;;;;;13266:10;;13278:5;;13285:8;;13295:5;;13224:77;;;;;;;;;;;13208:13;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;13224:77:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;13224:77:13;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;13224:77:13;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;13224:77:13;;-1:-1:-1;;;;;;;13317:34:13;;-1:-1:-1;;;;;13317:34:13;13309:43;;;;;;13173:186;;3795:1;3568;12843:520;;;;;;:::o;2753:455:11:-;2815:21;2827:8;2815:11;:21::i;:::-;2843:18;2864:19;;;:9;:19;;;;;;2914:6;:13;;2864:19;;-1:-1:-1;;2914:17:11;;;2843:18;;2914:6;:17;;2957:22;;;;;;;;;;;;;;2937:42;;3007:9;2986:6;2993:10;2986:18;;;;;;;;;;;;;;;;;:30;3023:6;:15;;;;;-1:-1:-1;;3023:15:11;;;:::i;:::-;-1:-1:-1;3141:20:11;;;;:9;:20;;;;;;:33;;;;3180:19;;;-1:-1:-1;3180:19:11;;:23;2753:455::o;4837:140::-;-1:-1:-1;;;;;4947:18:11;4923:7;4947:18;;;:10;:18;;;;;:25;;4837:140::o;13491:164:13:-;13599:1;13565:22;;;:12;:22;;;;;;-1:-1:-1;;;;;13565:22:13;:36;13561:90;;13622:22;;;;:12;:22;;;;;13615:29;;-1:-1:-1;;;;;;13615:29:13;;;13491:164::o;3479:547:11:-;3577:19;;;;:9;:19;;;;;;-1:-1:-1;;;;;3577:28:11;;;:19;;:28;3569:37;;;;;;3619:19;;;;:9;:19;;;;;;;;3612:26;;-1:-1:-1;;;;;;3612:26:11;;;3674:14;:24;;;;;;-1:-1:-1;;;;;3729:17:11;;;;:10;:17;;;;;;:24;-1:-1:-1;;3729:28:11;3768:36;;;3764:225;;-1:-1:-1;;;;;3838:17:11;;3818;3838;;;:10;:17;;;;;:33;;3856:14;;3838:33;;;;;;;;;;;;;;3818:53;;3919:9;3879:10;:17;3890:5;-1:-1:-1;;;;;3879:17:11;-1:-1:-1;;;;;3879:17:11;;;;;;;;;;;;3897:18;3879:37;;;;;;;;;;;;;;;;;;;:49;;;;3936:25;;;:14;:25;;;;;:46;;;3764:225;-1:-1:-1;;;;;3995:17:11;;;;;;:10;:17;;;;;:26;;;;;-1:-1:-1;;3995:26:11;;;:::i;4290:260::-;4414:1;4383:19;;;:9;:19;;;;;;-1:-1:-1;;;;;4383:19:11;:33;4375:42;;;;;;4423:19;;;;:9;:19;;;;;;;;:25;;-1:-1:-1;;;;;4423:25:11;;;-1:-1:-1;;;;;;4423:25:11;;;;;;;4472:15;;;:10;:15;;;;;27:10:-1;;23:18;;;45:23;;4472:30:11;;;;;;;;;;4508:24;;;:14;:24;;;;;;;:37;4290:260::o;10272:238:13:-;-1:-1:-1;;;;;10359:17:13;;10351:26;;;;;;10422:1;10391:19;;;:9;:19;;;;;;-1:-1:-1;;;;;10391:19:13;:33;10383:42;;;;;;10432:26;10444:3;10449:8;10432:11;:26::i;:::-;10470:35;;10496:8;;-1:-1:-1;;;;;10470:35:13;;;10487:1;;10470:35;;10487:1;;10470:35;10272:238;;:::o;280:596:14:-;799:18;863:8;;;280:596::o;10903:259:13:-;3786:1;3755:19;;;:9;:19;;;;;;10974:8;;-1:-1:-1;;;;;3755:19:13;3747:42;;;;;;10992:18;11013:19;;;:9;:19;;;;;;-1:-1:-1;;;;;11013:19:13;11038:24;11023:8;11038:14;:24::i;:::-;11068:36;11083:10;11095:8;11068:14;:36::i;:::-;11115:42;;11148:8;;11144:1;;-1:-1:-1;;;;;11115:42:13;;;;;11144:1;;11115:42;3795:1;10903:259;;:::o;214:560:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "source": "pragma solidity 0.5.6;\n\nimport \"../../contracts/tokens/nf-token-enumerable.sol\";\nimport \"../ownership/ownable.sol\";\n\n/**\n * @dev This is an example contract implementation of NFToken with enumerable extension.\n */\ncontract NFTokenEnumerableMock is\n  NFTokenEnumerable,\n  Ownable\n{\n\n  /**\n   * @dev Mints a new NFT.\n   * @param _to The address that will own the minted NFT.\n   * @param _tokenId of the NFT to be minted by the msg.sender.\n   */\n  function mint(\n    address _to,\n    uint256 _tokenId\n  )\n    external\n    onlyOwner\n  {\n    super._mint(_to, _tokenId);\n  }\n\n  /**\n   * @dev Removes a NFT from owner.\n   * @param _tokenId Which NFT we want to remove.\n   */\n  function burn(\n    uint256 _tokenId\n  )\n    external\n    onlyOwner\n  {\n    super._burn(_tokenId);\n  }\n\n}\n",
+  "sourcePath": "/home/cenz/dev/dapps/dist-market/contracts/mocks/nf-token-enumerable-mock.sol",
+  "ast": {
+    "absolutePath": "/home/cenz/dev/dapps/dist-market/contracts/mocks/nf-token-enumerable-mock.sol",
+    "exportedSymbols": {
+      "NFTokenEnumerableMock": [
+        218
+      ]
+    },
+    "id": 219,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 180,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:2"
+      },
+      {
+        "absolutePath": "/home/cenz/dev/dapps/dist-market/contracts/tokens/nf-token-enumerable.sol",
+        "file": "../../contracts/tokens/nf-token-enumerable.sol",
+        "id": 181,
+        "nodeType": "ImportDirective",
+        "scope": 219,
+        "sourceUnit": 897,
+        "src": "24:56:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/cenz/dev/dapps/dist-market/contracts/ownership/ownable.sol",
+        "file": "../ownership/ownable.sol",
+        "id": 182,
+        "nodeType": "ImportDirective",
+        "scope": 219,
+        "sourceUnit": 442,
+        "src": "81:34:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 183,
+              "name": "NFTokenEnumerable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 896,
+              "src": "250:17:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_NFTokenEnumerable_$896",
+                "typeString": "contract NFTokenEnumerable"
+              }
+            },
+            "id": 184,
+            "nodeType": "InheritanceSpecifier",
+            "src": "250:17:2"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 185,
+              "name": "Ownable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 441,
+              "src": "271:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Ownable_$441",
+                "typeString": "contract Ownable"
+              }
+            },
+            "id": 186,
+            "nodeType": "InheritanceSpecifier",
+            "src": "271:7:2"
+          }
+        ],
+        "contractDependencies": [
+          441,
+          465,
+          601,
+          896,
+          1632,
+          1663,
+          1695
+        ],
+        "contractKind": "contract",
+        "documentation": "@dev This is an example contract implementation of NFToken with enumerable extension.",
+        "fullyImplemented": true,
+        "id": 218,
+        "linearizedBaseContracts": [
+          218,
+          441,
+          896,
+          465,
+          1632,
+          1695,
+          1663,
+          601
+        ],
+        "name": "NFTokenEnumerableMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 202,
+              "nodeType": "Block",
+              "src": "531:37:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 198,
+                        "name": "_to",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 188,
+                        "src": "549:3:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 199,
+                        "name": "_tokenId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 190,
+                        "src": "554:8:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 195,
+                        "name": "super",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1747,
+                        "src": "537:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_super$_NFTokenEnumerableMock_$218",
+                          "typeString": "contract super NFTokenEnumerableMock"
+                        }
+                      },
+                      "id": 197,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "_mint",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 718,
+                      "src": "537:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,uint256)"
+                      }
+                    },
+                    "id": 200,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "537:26:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 201,
+                  "nodeType": "ExpressionStatement",
+                  "src": "537:26:2"
+                }
+              ]
+            },
+            "documentation": "@dev Mints a new NFT.\n@param _to The address that will own the minted NFT.\n@param _tokenId of the NFT to be minted by the msg.sender.",
+            "id": 203,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 193,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 192,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 414,
+                  "src": "519:9:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "519:9:2"
+              }
+            ],
+            "name": "mint",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 191,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 188,
+                  "name": "_to",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 203,
+                  "src": "464:11:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 187,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "464:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 190,
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 203,
+                  "src": "481:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 189,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "481:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "458:43:2"
+            },
+            "returnParameters": {
+              "id": 194,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "531:0:2"
+            },
+            "scope": 218,
+            "src": "445:123:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 216,
+              "nodeType": "Block",
+              "src": "739:32:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 213,
+                        "name": "_tokenId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 205,
+                        "src": "757:8:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 210,
+                        "name": "super",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1747,
+                        "src": "745:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_super$_NFTokenEnumerableMock_$218",
+                          "typeString": "contract super NFTokenEnumerableMock"
+                        }
+                      },
+                      "id": 212,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "_burn",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 772,
+                      "src": "745:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 214,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "745:21:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 215,
+                  "nodeType": "ExpressionStatement",
+                  "src": "745:21:2"
+                }
+              ]
+            },
+            "documentation": "@dev Removes a NFT from owner.\n@param _tokenId Which NFT we want to remove.",
+            "id": 217,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 208,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 207,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 414,
+                  "src": "727:9:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "727:9:2"
+              }
+            ],
+            "name": "burn",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 206,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 205,
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 217,
+                  "src": "689:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 204,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "689:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "683:26:2"
+            },
+            "returnParameters": {
+              "id": 209,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "739:0:2"
+            },
+            "scope": 218,
+            "src": "670:101:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 219,
+        "src": "214:560:2"
+      }
+    ],
+    "src": "0:775:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/cenz/dev/dapps/dist-market/contracts/mocks/nf-token-enumerable-mock.sol",
+    "exportedSymbols": {
+      "NFTokenEnumerableMock": [
+        218
+      ]
+    },
+    "id": 219,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 180,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:2"
+      },
+      {
+        "absolutePath": "/home/cenz/dev/dapps/dist-market/contracts/tokens/nf-token-enumerable.sol",
+        "file": "../../contracts/tokens/nf-token-enumerable.sol",
+        "id": 181,
+        "nodeType": "ImportDirective",
+        "scope": 219,
+        "sourceUnit": 897,
+        "src": "24:56:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/cenz/dev/dapps/dist-market/contracts/ownership/ownable.sol",
+        "file": "../ownership/ownable.sol",
+        "id": 182,
+        "nodeType": "ImportDirective",
+        "scope": 219,
+        "sourceUnit": 442,
+        "src": "81:34:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 183,
+              "name": "NFTokenEnumerable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 896,
+              "src": "250:17:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_NFTokenEnumerable_$896",
+                "typeString": "contract NFTokenEnumerable"
+              }
+            },
+            "id": 184,
+            "nodeType": "InheritanceSpecifier",
+            "src": "250:17:2"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 185,
+              "name": "Ownable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 441,
+              "src": "271:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Ownable_$441",
+                "typeString": "contract Ownable"
+              }
+            },
+            "id": 186,
+            "nodeType": "InheritanceSpecifier",
+            "src": "271:7:2"
+          }
+        ],
+        "contractDependencies": [
+          441,
+          465,
+          601,
+          896,
+          1632,
+          1663,
+          1695
+        ],
+        "contractKind": "contract",
+        "documentation": "@dev This is an example contract implementation of NFToken with enumerable extension.",
+        "fullyImplemented": true,
+        "id": 218,
+        "linearizedBaseContracts": [
+          218,
+          441,
+          896,
+          465,
+          1632,
+          1695,
+          1663,
+          601
+        ],
+        "name": "NFTokenEnumerableMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 202,
+              "nodeType": "Block",
+              "src": "531:37:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 198,
+                        "name": "_to",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 188,
+                        "src": "549:3:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 199,
+                        "name": "_tokenId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 190,
+                        "src": "554:8:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 195,
+                        "name": "super",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1747,
+                        "src": "537:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_super$_NFTokenEnumerableMock_$218",
+                          "typeString": "contract super NFTokenEnumerableMock"
+                        }
+                      },
+                      "id": 197,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "_mint",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 718,
+                      "src": "537:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,uint256)"
+                      }
+                    },
+                    "id": 200,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "537:26:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 201,
+                  "nodeType": "ExpressionStatement",
+                  "src": "537:26:2"
+                }
+              ]
+            },
+            "documentation": "@dev Mints a new NFT.\n@param _to The address that will own the minted NFT.\n@param _tokenId of the NFT to be minted by the msg.sender.",
+            "id": 203,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 193,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 192,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 414,
+                  "src": "519:9:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "519:9:2"
+              }
+            ],
+            "name": "mint",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 191,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 188,
+                  "name": "_to",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 203,
+                  "src": "464:11:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 187,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "464:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 190,
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 203,
+                  "src": "481:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 189,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "481:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "458:43:2"
+            },
+            "returnParameters": {
+              "id": 194,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "531:0:2"
+            },
+            "scope": 218,
+            "src": "445:123:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 216,
+              "nodeType": "Block",
+              "src": "739:32:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 213,
+                        "name": "_tokenId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 205,
+                        "src": "757:8:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 210,
+                        "name": "super",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1747,
+                        "src": "745:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_super$_NFTokenEnumerableMock_$218",
+                          "typeString": "contract super NFTokenEnumerableMock"
+                        }
+                      },
+                      "id": 212,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "_burn",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 772,
+                      "src": "745:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 214,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "745:21:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 215,
+                  "nodeType": "ExpressionStatement",
+                  "src": "745:21:2"
+                }
+              ]
+            },
+            "documentation": "@dev Removes a NFT from owner.\n@param _tokenId Which NFT we want to remove.",
+            "id": 217,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 208,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 207,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 414,
+                  "src": "727:9:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "727:9:2"
+              }
+            ],
+            "name": "burn",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 206,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 205,
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 217,
+                  "src": "689:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 204,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "689:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "683:26:2"
+            },
+            "returnParameters": {
+              "id": 209,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "739:0:2"
+            },
+            "scope": 218,
+            "src": "670:101:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 219,
+        "src": "214:560:2"
+      }
+    ],
+    "src": "0:775:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.6+commit.b259423e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.11",
+  "updatedAt": "2019-06-18T23:41:03.021Z",
+  "devdoc": {
+    "details": "This is an example contract implementation of NFToken with enumerable extension.",
+    "methods": {
+      "approve(address,uint256)": {
+        "details": "Set or reaffirm the approved address for an NFT. This function can be changed to payable.",
+        "params": {
+          "_approved": "Address to be approved for the given NFT ID.",
+          "_tokenId": "ID of the token to be approved."
+        }
+      },
+      "balanceOf(address)": {
+        "details": "Returns the number of NFTs owned by `_owner`. NFTs assigned to the zero address are considered invalid, and this function throws for queries about the zero address.",
+        "params": {
+          "_owner": "Address for whom to query the balance."
+        },
+        "return": "Balance of _owner."
+      },
+      "burn(uint256)": {
+        "details": "Removes a NFT from owner.",
+        "params": {
+          "_tokenId": "Which NFT we want to remove."
+        }
+      },
+      "getApproved(uint256)": {
+        "details": "Get the approved address for a single NFT.",
+        "params": {
+          "_tokenId": "ID of the NFT to query the approval of."
+        },
+        "return": "Address that _tokenId is approved for. "
+      },
+      "isApprovedForAll(address,address)": {
+        "details": "Checks if `_operator` is an approved operator for `_owner`.",
+        "params": {
+          "_operator": "The address that acts on behalf of the owner.",
+          "_owner": "The address that owns the NFTs."
+        },
+        "return": "True if approved for all, false otherwise."
+      },
+      "mint(address,uint256)": {
+        "details": "Mints a new NFT.",
+        "params": {
+          "_to": "The address that will own the minted NFT.",
+          "_tokenId": "of the NFT to be minted by the msg.sender."
+        }
+      },
+      "ownerOf(uint256)": {
+        "details": "Returns the address of the owner of the NFT. NFTs assigned to zero address are considered invalid, and queries about them do throw.",
+        "params": {
+          "_tokenId": "The identifier for an NFT."
+        },
+        "return": "Address of _tokenId owner."
+      },
+      "safeTransferFrom(address,address,uint256)": {
+        "details": "Transfers the ownership of an NFT from one address to another address. This function can be changed to payable.",
+        "params": {
+          "_from": "The current owner of the NFT.",
+          "_to": "The new owner.",
+          "_tokenId": "The NFT to transfer."
+        }
+      },
+      "safeTransferFrom(address,address,uint256,bytes)": {
+        "details": "Transfers the ownership of an NFT from one address to another address. This function can be changed to payable.",
+        "params": {
+          "_data": "Additional data with no specified format, sent in call to `_to`.",
+          "_from": "The current owner of the NFT.",
+          "_to": "The new owner.",
+          "_tokenId": "The NFT to transfer."
+        }
+      },
+      "setApprovalForAll(address,bool)": {
+        "details": "Enables or disables approval for a third party (\"operator\") to manage all of `msg.sender`'s assets. It also emits the ApprovalForAll event.",
+        "params": {
+          "_approved": "True if the operators is approved, false to revoke approval.",
+          "_operator": "Address to add to the set of authorized operators."
+        }
+      },
+      "supportsInterface(bytes4)": {
+        "details": "Function to check which interfaces are suported by this contract.",
+        "params": {
+          "_interfaceID": "Id of the interface."
+        },
+        "return": "True if _interfaceID is supported, false otherwise."
+      },
+      "tokenByIndex(uint256)": {
+        "details": "Returns NFT ID by its index.",
+        "params": {
+          "_index": "A counter less than `totalSupply()`."
+        },
+        "return": "Token id."
+      },
+      "tokenOfOwnerByIndex(address,uint256)": {
+        "details": "returns the n-th NFT ID from a list of owner's tokens.",
+        "params": {
+          "_index": "Index number representing n-th token in owner's list of tokens.",
+          "_owner": "Token owner's address."
+        },
+        "return": "Token id."
+      },
+      "totalSupply()": {
+        "details": "Returns the count of all existing NFTokens.",
+        "return": "Total supply of NFTs."
+      },
+      "transferFrom(address,address,uint256)": {
+        "details": "Throws unless `msg.sender` is the current owner, an authorized operator, or the approved address for this NFT. Throws if `_from` is not the current owner. Throws if `_to` is the zero address. Throws if `_tokenId` is not a valid NFT. This function can be changed to payable.",
+        "params": {
+          "_from": "The current owner of the NFT.",
+          "_to": "The new owner.",
+          "_tokenId": "The NFT to transfer."
+        }
+      },
+      "transferOwnership(address)": {
+        "details": "Allows the current owner to transfer control of the contract to a newOwner.",
+        "params": {
+          "_newOwner": "The address to transfer ownership to."
+        }
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "approve(address,uint256)": {
+        "notice": "The zero address indicates there is no approved address. Throws unless `msg.sender` is the current NFT owner, or an authorized operator of the current owner."
+      },
+      "getApproved(uint256)": {
+        "notice": "Throws if `_tokenId` is not a valid NFT."
+      },
+      "safeTransferFrom(address,address,uint256)": {
+        "notice": "This works identically to the other function with an extra data parameter, except this function just sets data to \"\""
+      },
+      "safeTransferFrom(address,address,uint256,bytes)": {
+        "notice": "Throws unless `msg.sender` is the current owner, an authorized operator, or the approved address for this NFT. Throws if `_from` is not the current owner. Throws if `_to` is the zero address. Throws if `_tokenId` is not a valid NFT. When transfer is complete, this function checks if `_to` is a smart contract (code size > 0). If so, it calls  `onERC721Received` on `_to` and throws if the return value is not  `bytes4(keccak256(\"onERC721Received(address,uint256,bytes)\"))`."
+      },
+      "setApprovalForAll(address,bool)": {
+        "notice": "This works even if sender doesn't own any tokens at the time."
+      },
+      "transferFrom(address,address,uint256)": {
+        "notice": "The caller is responsible to confirm that `_to` is capable of receiving NFTs or else they maybe be permanently lost."
+      }
+    }
+  }
+}
